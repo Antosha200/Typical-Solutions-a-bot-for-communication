@@ -1,0 +1,17 @@
+{
+  "name": "app/app",
+  "description": "app",
+  "minimum-stability": "stable",
+  "require": {
+    "ext-mysqli": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "": [
+        "Controller/",
+        "Model",
+        "Controller/FrontController.php"
+      ]
+    }
+  }
+}

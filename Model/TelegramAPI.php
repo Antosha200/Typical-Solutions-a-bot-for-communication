@@ -3,24 +3,65 @@
  * @author Anton Naumov
  */
 
-echo 'Telegram API';
+echo 'Telegram API<br>';
 
 const TOKEN = '5651939402:AAEkpC2SVaxeGanut29D_VlGbNM_nYKNfqQ';
-const BASE_URL = 'https://api.telegram.org/bot' . TOKEN . '/';
+const BASE_URL = 'https://api.telegram.org/bot';
 const CHAT_ID = 445503956; //possible can not to be hardcoded
 
 class TelegramAPI
 {
-    public function sendRequest($method, $params = [])
+    public function __construct()
     {
+        $this->sendRequest('sendMessage', ['chat_id' => CHAT_ID, 'text' => 'Приветсвуем в новостном боте! Пожалуйста, выберите интересующий тип новостей в меню.',
+            'reply_markup' => json_encode(array(
+                'keyboard' => array(
+                    array(
+                        array(
+                            'text' => 'Текущая погода',
+                            'url' => 'YOUR BUTTON URL',
+                        ),
+                        array(
+                            'text' => 'Политика',
+                            'url' => 'YOUR BUTTON URL',
+                        ),
+                        array(
+                            'text' => 'Технологии',
+                            'url' => 'YOUR BUTTON URL',
+                        ),
+                        array(
+                            'text' => 'Наука',
+                            'url' => 'YOUR BUTTON URL',
+                        ),
+                        array(
+                            'text' => 'Случайно',
+                            'url' => 'YOUR BUTTON URL',
+                        ),
+                    )
+                ),
+                'one_time_keyboard' => TRUE,
+                'resize_keyboard' => TRUE,
+        )),]);
+    }
 
-        if (!empty($params)) {
-            $url = BASE_URL . $method . '?' . http_build_query($params);
-        } else {
-            $url = BASE_URL . $method;
-        }
+    function sendRequest($method, $data, $headers = [])
+    {
+        $curl = curl_init();
+        curl_setopt_array($curl, [
+            CURLOPT_POST => 1,
+            CURLOPT_HEADER => 0,
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_URL => BASE_URL . TOKEN . '/' . $method,
+            CURLOPT_POSTFIELDS => json_encode($data),
+            CURLOPT_HTTPHEADER => array_merge(array("Content-Type: application/json"))
+        ]);
+        $result = curl_exec($curl);
+        curl_close($curl);
+        return (json_decode($result, 1) ? json_decode($result, 1) : $result);
+    }
 
-        return json_decode(file_get_contents($url), JSON_OBJECT_AS_ARRAY);
-
+    public function getUpdates()
+    {
+        return $this->sendRequest('getUpdates', []);
     }
 }
