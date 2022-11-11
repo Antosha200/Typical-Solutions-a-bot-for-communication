@@ -7,7 +7,7 @@ echo 'Telegram API<br>';
 
 const TOKEN = '5651939402:AAEkpC2SVaxeGanut29D_VlGbNM_nYKNfqQ';
 const BASE_URL = 'https://api.telegram.org/bot';
-const CHAT_ID = 445503956; //possible can not to be hardcoded
+const CHAT_ID = 445503956;
 
 class TelegramAPI
 {
@@ -19,23 +19,23 @@ class TelegramAPI
                     array(
                         array(
                             'text' => 'Текущая погода',
-                            'url' => 'YOUR BUTTON URL',
+                            'url' => '',
                         ),
                         array(
                             'text' => 'Политика',
-                            'url' => 'YOUR BUTTON URL',
+                            'url' => '',
                         ),
                         array(
                             'text' => 'Технологии',
-                            'url' => 'YOUR BUTTON URL',
+                            'url' => '',
                         ),
                         array(
                             'text' => 'Наука',
-                            'url' => 'YOUR BUTTON URL',
+                            'url' => '',
                         ),
                         array(
                             'text' => 'Случайно',
-                            'url' => 'YOUR BUTTON URL',
+                            'url' => '',
                         ),
                     )
                 ),

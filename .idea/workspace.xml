@@ -4,8 +4,12 @@
     <list default="true" id="48d3b3c3-be79-4f79-938a-e75ee1577979" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/FrontController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Politics.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Politics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Random.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Random.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Science.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Science.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Technologies.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Technologies.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/TelegramAPI.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TelegramAPI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Weather.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +175,7 @@
       <workItem from="1668001965284" duration="1591000" />
       <workItem from="1668003944821" duration="788000" />
       <workItem from="1668011558252" duration="597000" />
-      <workItem from="1668150161307" duration="11511000" />
+      <workItem from="1668150161307" duration="14804000" />
     </task>
     <servers />
   </component>
