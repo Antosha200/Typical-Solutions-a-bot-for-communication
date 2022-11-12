@@ -13,7 +13,7 @@ class TelegramAPI
 {
     public function __construct()
     {
-        $this->sendRequest('sendMessage', ['chat_id' => CHAT_ID, 'text' => 'Приветсвуем в новостном боте! Пожалуйста, выберите интересующий тип новостей в меню.',
+        $this->sendRequest('sendMessage', ['chat_id' => CHAT_ID, 'text' => 'Приветствуем в новостном боте! Пожалуйста, выберите интересующий тип новостей в меню.',
             'reply_markup' => json_encode(array(
                 'keyboard' => array(
                     array(
@@ -30,11 +30,7 @@ class TelegramAPI
                             'url' => '',
                         ),
                         array(
-                            'text' => 'Наука',
-                            'url' => '',
-                        ),
-                        array(
-                            'text' => 'Случайно',
+                            'text' => 'Новейшее',
                             'url' => '',
                         ),
                     )
@@ -44,7 +40,7 @@ class TelegramAPI
         )),]);
     }
 
-    function sendRequest($method, $data, $headers = [])
+    public static function sendRequest($method, $data, $headers = [])
     {
         $curl = curl_init();
         curl_setopt_array($curl, [

@@ -20,21 +20,17 @@ class FrontController{
         $TelegramAPI = new TelegramAPI();
 
         sleep(10);
-
         $chatUpdates = $TelegramAPI->getUpdates();
-
         $lastMessage = $chatUpdates["result"][count($chatUpdates["result"])-1]["message"]["text"]; //последнее текстовое сообщение
 
         switch ($lastMessage){
-            case 'Политика': $Politics = new Politics();
+            case 'Политика': new Politics();
                 break;
-            case 'Текущая погода': $Weather = new Weather();
+            case 'Текущая погода': new Weather();
                 break;
-            case 'Наука': $Science = new Science();
+            case 'Новейшее': new Newest();
                 break;
-            case 'Случайно': $Random = new Random();
-                break;
-            case 'Технологии': $Technologies = new Technologies();
+            case 'Технологии': new Technologies();
                 break;
             default: $TelegramAPI->sendRequest('sendMessage', ['chat_id' => CHAT_ID, 'text' => 'Ваше сообщение не распознано. Убедитесь, что точно попали по кнопке']);
         }
