@@ -2,7 +2,6 @@
 
 class Weather{
     public function __construct(){
-        echo "Погода";
 
         $content = file_get_contents('https://world-weather.ru/pogoda/belarus/minsk/');
 

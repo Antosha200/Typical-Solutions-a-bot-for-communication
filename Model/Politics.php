@@ -3,7 +3,6 @@
 class Politics
 {
     public function __construct(){
-        echo "Политика";
 
         $content = file_get_contents('https://www.belta.by/politics/');
 

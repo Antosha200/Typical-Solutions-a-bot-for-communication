@@ -3,8 +3,6 @@
  * @author Anton Naumov
  */
 
-echo "FrontController<br>";
-
 class FrontController{
 
     public static function getInstance()
@@ -15,8 +13,7 @@ class FrontController{
     }
 
     public function makeRoute(){
-
-        echo "makingRoute<br>";
+        
         $TelegramAPI = new TelegramAPI();
 
         sleep(10);
@@ -28,7 +25,7 @@ class FrontController{
                 break;
             case 'Текущая погода': new Weather();
                 break;
-            case 'Новейшее': new Newest();
+            case 'Случайная': new Random();
                 break;
             case 'Технологии': new Technologies();
                 break;

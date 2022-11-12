@@ -3,8 +3,6 @@
  * @author Anton Naumov
  */
 
-echo 'Telegram API<br>';
-
 const TOKEN = '5651939402:AAEkpC2SVaxeGanut29D_VlGbNM_nYKNfqQ';
 const BASE_URL = 'https://api.telegram.org/bot';
 const CHAT_ID = 445503956;
@@ -30,7 +28,7 @@ class TelegramAPI
                             'url' => '',
                         ),
                         array(
-                            'text' => 'Новейшее',
+                            'text' => 'Случайная',
                             'url' => '',
                         ),
                     )

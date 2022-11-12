@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48d3b3c3-be79-4f79-938a-e75ee1577979" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Model/Random.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/FrontController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Newest.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Politics.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Politics.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Random.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Newest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Science.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Technologies.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Technologies.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/TelegramAPI.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TelegramAPI.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Weather.php" afterDir="false" />
@@ -180,7 +180,7 @@
       <workItem from="1668150161307" duration="15456000" />
       <workItem from="1668188708383" duration="8155000" />
       <workItem from="1668197394330" duration="2665000" />
-      <workItem from="1668249605615" duration="3104000" />
+      <workItem from="1668249605615" duration="4861000" />
     </task>
     <servers />
   </component>
