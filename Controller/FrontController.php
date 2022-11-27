@@ -13,7 +13,7 @@ class FrontController{
     }
 
     public function makeRoute(){
-        
+
         $TelegramAPI = new TelegramAPI();
 
         sleep(10);

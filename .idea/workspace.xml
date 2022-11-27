@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48d3b3c3-be79-4f79-938a-e75ee1577979" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Model/Random.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Newest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Politics.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Politics.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Technologies.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Technologies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/TelegramAPI.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TelegramAPI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Weather.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +143,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/Typical-Solutions-a-bot-for-communication&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -180,7 +175,11 @@
       <workItem from="1668150161307" duration="15456000" />
       <workItem from="1668188708383" duration="8155000" />
       <workItem from="1668197394330" duration="2665000" />
-      <workItem from="1668249605615" duration="4861000" />
+      <workItem from="1668249605615" duration="5000000" />
+      <workItem from="1668337137644" duration="18000" />
+      <workItem from="1668337187235" duration="223000" />
+      <workItem from="1668337482968" duration="16000" />
+      <workItem from="1668341073807" duration="599000" />
     </task>
     <servers />
   </component>
